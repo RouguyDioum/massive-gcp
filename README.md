@@ -43,19 +43,38 @@ gcloud app deploy index.yaml
 gcloud datastore indexes create index.yaml
 ```
 
-* open the URL address of the you application, create account, post, follow. Does it Works?? If something is wrong where to find the error ?? 
+* open the URL address of the you application, create account, post, follow. Does it Works?? If something is wrong where to find the error ??
+* - Yes, I created an account named Mamamia, I posted "hahaha" and I followed another user who's name is hoo.
   * See the prof
 
 
-* How many servers are working for this app?? How much are you paying for running this app ? What is the cloud model for this app (Iaas, Paas, Saas). What is the Platform in PaaS ??
+* How many servers are working for this app??
+* - Since App Engine is serverless, Google automatically manages the number of servers. The number of instances is dynamic.
+   
+* How much are you paying for running this app ?
+* - The cost depends on usage: compute, storage, and requests.
+  - For now, I don't pay, I'm in the free tier because it is a small use. 
+* What is the cloud model for this app (Iaas, Paas, Saas).
+* - The model is Paas.
+* What is the Platform in PaaS ??
+* - Google App Engine.
 
 * See the impact in the datastore: do you see your data ?
+* - Yes, i saw them in Google CLoud/ Datastore/ Firestore/ Database details
+    <img width="1477" height="244" alt="image" src="https://github.com/user-attachments/assets/001c6406-830e-4bc0-9a92-2713a0628be5" />
+
   * See the prof
 
-* How much are you paying for hosting these data in this store ?? 
+* How much are you paying for hosting these data in this store ??
+* - Storage is billed by data store. For now :  0,00 $.
 * What is the consistency of this store ?
-* What is the sharding strategy of this store ? How to be sure of that ? 
+* - The datastore is in eventual consistency for global requests.
+* What is the sharding strategy of this store ?
+* - The sharding/partitioning strategy is automatic. Datastore uses range partitioning with dynamic splits. Google manages the distribution internally.
+* How to be sure of that ?
+* - We can be sure by checking the project notes/Datastore documentation: Datastore uses automatic partitioning with dynamic splits. Also, we do not manually configure shards in the application.
 * What queries can you write with store (expressivity)
+* - SELECT * FROM Post WHERE author IN @authors ORDER BY created DESC
 
 ## HTTP Endpoints
 
