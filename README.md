@@ -73,6 +73,7 @@ gcloud datastore indexes create index.yaml
 * - The sharding/partitioning strategy is automatic. Datastore uses range partitioning with dynamic splits. Google manages the distribution internally.
 * How to be sure of that ?
 * - We can be sure by checking the project notes/Datastore documentation: Datastore uses automatic partitioning with dynamic splits. Also, we do not manually configure shards in the application.
+  - The system is highly scalable because App Engine automatically scales instances and Datastore distributes data across multiple nodes.
 * What queries can you write with store (expressivity)
 * - SELECT * FROM Post WHERE author IN @authors ORDER BY created DESC
 
