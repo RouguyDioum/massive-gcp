@@ -57,7 +57,8 @@ Fanout testé avec :
 - 40 followees
 - 60 followees
 
-<img width="861" height="520" alt="image" src="https://github.com/user-attachments/assets/174d0b0a-8463-4840-a397-45bf66b8b591" />
+<img width="829" height="489" alt="image" src="https://github.com/user-attachments/assets/3bf40502-2e94-4886-8d3d-026d07d48149" />
+
 
 ## Results Interpretation
 
